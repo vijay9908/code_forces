@@ -1,0 +1,6 @@
+time1 = input()
+time2 = input()
+hh1 , mm1 = int(time1[0:2]),int(time1[3:5]) 
+hh2 , mm2 = int(time2[0:2]),int(time2[3:5])
+sum = mm1 + mm2 + (hh1*60) + (hh2*60)
+print("%02d:%02d"%((sum/2)//60,(sum/2)%60))
