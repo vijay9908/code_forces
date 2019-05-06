@@ -1,10 +1,12 @@
-k = int(input())
-for _ in range(k):
+t = int(input())
+for i in range(t):
     n = int(input())
-    a = input()
-    for i in range(n//2): 
-        z = abs(ord(a[i])-ord(a[n-i-1]))
-    if(z!=0 and z!=2):
-        print("NO")
+    s = input()
+    cnt = 0
+    for i in range(n//2):
+        if abs(ord(s[i]) - ord(s[n-i-1])) == 0 or abs(ord(s[i]) - ord(s[n-i-1])) == 2:
+            cnt+=1
+    if cnt == n//2:
+        print('YES')
     else:
-        print("YES")
+        print('NO')
