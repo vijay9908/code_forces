@@ -13,5 +13,8 @@ int main()
             rank++;
         }
     }
+    //printf("%d",rank);
     printf("%d",rank);
+    
+    
 }
